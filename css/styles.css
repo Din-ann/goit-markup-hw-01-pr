@@ -1,13 +1,115 @@
-header {
-    background-color: ;
+:root {
+    --primary-font: 'Roboto' , sans-serif;
+    --logo-font: 'Raleway' , sans-serif;
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --navyblue: #2E2F42;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --modal-overlay-color: #2E2F42;
+    --white-background-color: #FFFFFF;
+    --modal-background-color: #FCFCFC;
 }
 
 body {
-    font-family: "Roboto" , sans-serif ;
+    font-family: var(--primary-font);
     background-color: #FFF;
 }
 
-.hero-image {
+.list {
+    list-style-type: none;
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+/*--------------------HEADER------------------*/
+
+.header-logo {
+    color: var(--navyblue, #2E2F42);
+font-family: var(--logo-font);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.16;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.header-logo-color {
+    color: var(--primary-brand-color, #4D5AE5);
+}
+
+.header-menu-link {
+    color: var(--navyblue, #2E2F42);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
+/*--------------------HERO------------------*/
+
+
+.hero {
     background-color: #2E2F42;
 }
 
+.hero-title {
+    color: var(--white-background-color, #FFF);
+text-align: center;
+font-family: var(--primary-font);
+font-size: 56px;
+font-weight: 700;
+line-height: 1.07;
+letter-spacing: 0.02em;
+}
+.hero-button {
+    color: var(--white-background-color, #FFF);
+font-family: var(--primary-font);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  /*--------------------FEATURE------------------*/
+
+
+.feature-list {
+}
+.feature-item {
+}
+.feature-subtitle {
+    color: var(--navyblue, #2E2F42);
+font-family: var(--primary-font);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.20;
+letter-spacing: 0.02em;
+}
+.feature-item-text {
+    color: var(--text-color, #434455);
+font-family: var(--primary-font);
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
